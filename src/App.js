@@ -7,10 +7,10 @@ import Transforms from './components/transforms/transforms';
 function App() {
   return (
     <>
-     {/* <Mainpage/> */}
+     <Mainpage/>
     {/* <HtmlData/> */}
-    {/* <Button/> */}
-     <Transforms/>
+    <Button/>
+     {/* <Transforms/> */}
   </>
   );
 }
