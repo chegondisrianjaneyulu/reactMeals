@@ -60,8 +60,8 @@ export default function Button() {
     <center className='text-xl py-4 font-extrabold'>embla carousel</center> 
     <div className='bg-green-400 py-4 w-[60%]  mx-auto overflow-hidden' ref={emblaRef}>
       <div className='flex items-center gap-[15px]'>
-        {data.map((item) => (
-          <div key={item.id} onClick={() => showdata(item.name)} className='w-[200px] bg-gray-100 cursor-pointer'>{item.name}</div>
+        {data.map((item,index) => (
+          <div key={index} onClick={() => showdata(item.name)} className='w-[200px] bg-gray-100 cursor-pointer'>{item.name}</div>
         ))}
       </div>
       <div className='bg-white mt-4 w-[100px] text-center'>{showData ? 'item clicked': ''}</div>

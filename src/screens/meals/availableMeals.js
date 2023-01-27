@@ -34,7 +34,7 @@ export default function AvailableMeals() {
   return (
     <ul className='bg-white mx-auto w-[500px] rounded-md p-2'>
       {DUMMY_MEALS.map((item, index) => (
-        <>
+        
         <li key={index} className='my-2 flex items-center justify-between  border-b'>
          <div>
           <h6 className='font-semibold italic text-black'>{item.name}</h6>
@@ -45,7 +45,7 @@ export default function AvailableMeals() {
             <button onClick={() => dispatch(addMealsPrice(item.price))} className='bg-orange-500 hover:bg-orange-600 text-white p-1.5 hover:font-semibold rounded-sm'>Add</button>
           </div>
         </li>
-        </>
+      
       ))}
     </ul>
   )
